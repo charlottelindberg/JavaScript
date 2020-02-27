@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var weekdagen = new Array('maandag', 'dinsdag', 'woensdag', 
+        'donderdag', 'vrijdag', 'zaterdag', 'zondag');
+        console.log(weekdagen);
+        console.log(weekdagen[5]);
+        weekdagen.shift();
+        console.log(weekdagen);
+        weekdagen.push('maandag');
+        console.log(weekdagen);
+        var weekend=weekdagen.splice(4,2);
+        console.log(weekend);
+        weekdagen.sort();
+        console.log(weekdagen);
+        weekdagen.reverse();
+        console.log(weekdagen);
+        var gevondeIndex= weekdagen.indexOf('woensdag');
+        console.log(gevondeIndex); 
+        delete weekdagen[1];
+        console.log(weekdagen);
+
+        console.log(typeof weekend[0]);
+
+        var studenten=new Array('Jan', 'Jozef', 'Piet');
+        var plaats=studenten.indexOf('Jozef');
+        studenten.splice(plaats,1);
+        console.log(studenten);
+
+        var studentenKopie = studenten.slice();
+        studenten.push('Miet');
+        console.log(studenten);
+        console.log(studentenKopie);
+
+        var studentenString = studenten.join(" - ");
+        console.log(studentenString);
+
+        var mijnString="Vandaag, is, het, dinsdag";
+        console.log(mijnString);
+
+    </script>
+</body>
+</html>

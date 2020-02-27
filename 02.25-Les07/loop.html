@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        for (var stap = 0; stap < 10; stap++) {
+            document.write('<br>ik neem een stap')
+        }
+
+        for (var i = 7; i <= 11; i++) {
+            document.write('<br>is de les bijna gedaan?')
+        }
+
+        for (var x = 0; x < 3; x++) {
+            document.write('<br>This is loop: ' + x);
+        }
+
+        for (var i = 0; i < 5; i++) {
+            document.write('<br>The number is ' + i);
+        }
+        for (var i = 0; i < 10; i++) {
+            document.write('<br>Er volgens nu nog ' + (9 - i) + ' berichtjes');
+        }
+
+        for (var i = 1; i <= 10; i++) {
+            document.write('<br>Ik heb ' + i + ' stap(pen) genomen');
+        }
+
+        var namen = ['Jan', 'Piet', 'Eva'];
+        var lengte = namen.length;
+        for (var i = 0; i < lengte; i++) {
+            document.write('<br>De naam is ' + namen[i]);
+        }
+
+        var getallen = [5, 37, 88, 4, 0];
+        var lengte = getallen.length;
+        for (var i = 0; i < lengte; i++) {
+            document.write('<br>Het getal op plaats ' + i + ' is ' + getallen[i]);
+        }
+
+        var student = new Array('Henriette', 'Sarah', 'Peggy', 'Eva', 'Hilda', 'Charlotte');
+        for (var x = 0; x < student.length; x++) {
+            document.write('<br>Element ' + x + ' is ' + student[x]);
+        }
+
+        var student = new Array('Henriette', 'Sarah', 'Peggy', 'Eva', 'Hilda', 'Charlotte');
+        for (var x = 0; x < student.length; x++) {
+            document.write('<br>Element ' + x++ + ' is ' + student[x]);
+        }
+
+        var maanden = new Array('Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December');
+        // var maanden = new Array();
+        // maanden[1] = 'Januari';
+        // maanden[2] = 'Februari';
+        // maanden[3] = 'Maart';
+        // maanden[4] = 'April';
+        // maanden[5] = 'Mei';
+        // maanden[6] = 'Juni';
+        // maanden[7] = 'Juli';
+        // maanden[8] = 'Augustus';
+        // maanden[9] = 'September';
+        // maanden[10] = 'Oktober';
+        // maanden[11] = 'November';
+        // maanden[12] = 'December';
+        for (var i = 0; i < maanden.length; i++) {
+            document.write('<br>Maand ' + (i + 1) + ' is ' + maanden[i]);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var getal = new Array();
+        getal[0] = 'nul';
+        getal[1] = 'een';
+        getal[2] = 'twee';
+        getal[3] = 'drie';
+        getal[4] = 'vier';
+        getal[5] = 'vijf';
+        getal[6] = 'zes';
+        getal[7] = 'zeven';
+        getal[8] = 'acht';
+        getal[9] = 'negen';
+
+        var gsm = prompt("Wat is jouw gsm-nummer?");
+        var lengte = gsm.length;
+        document.write('<br>Jouw gsm-nummer in letters is: ');
+
+
+        for (var x = 0; x < lengte; x++) {
+            teken = gsm.charAt(x);
+            if (teken == '0') {
+                document.write(getal[0] + ' ')
+            } else if (teken == '1') {
+                document.write(getal[1] + ' ')
+            } else if (teken == '2') {
+                document.write(getal[2] + ' ')
+            } else if (teken == '3') {
+                document.write(getal[3] + ' ')
+            } else if (teken == '4') {
+                document.write(getal[4] + ' ')
+            } else if (teken == '5') {
+                document.write(getal[5] + ' ')
+            } else if (teken == '6') {
+                document.write(getal[6] + ' ')
+            } else if (teken == '7') {
+                document.write(getal[7] + ' ')
+            } else if (teken == '8') {
+                document.write(getal[8] + ' ')
+            } else if (teken == '9') {
+                document.write(getal[9] + ' ')
+            }
+        }
+        //     for (var i = 0; i < lengte; i++) {
+        //         document.write(getal[gsm.charAt(i)] + " ")
+        //     }
+        // }
+    </script>
+
+</body>
+
+</html>

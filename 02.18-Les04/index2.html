@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var verjaardag = new Date("1981-09-01");
+        document.write('<p>Mijn geboortedatum is: ' + verjaardag);
+
+        var verjaardag = new Date("1981-09-01T16:00:00");
+        document.write('<p>Mijn geboortedatum is: ' + verjaardag);
+
+        einddatum = prompt("Wat is einddatum JJJJ-MM-DD?");
+        var deadline = new Date(einddatum);
+        document.write('<p>Deadline: ' + deadline);
+        var nu = Date.now();
+        var dag = 86400000;
+        var dagen = ((deadline - nu) / dag).toFixed(0);
+        document.write('<br>Er zijn nog: ' + dagen + ' dagen te gaan!');
+    </script>
+
+    <script>
+        beginschooldag = new Date(2020, 0, 20, 0, 0);
+        document.write('<p>De eerste schooldag was: ' + beginschooldag);
+        eindschooldag = new Date(2020, 5, 30, 0, 00);
+        document.write('<br>De laatste schooldag is: ' + eindschooldag);
+        var dag = 86400000;
+        var restrerende = ((eindschooldag - beginschooldag) / dag).toFixed(0);
+        document.write('<br>Dat zijn ' + restrerende + ' dagen');
+    </script>
+</body>
+
+</html>

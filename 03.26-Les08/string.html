@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var titel = "JavaScript";
+        document.write('<br>Index van letter S is: ' + titel.indexOf('S'));
+
+        var string = 'Dit is een lange string met daarin het woord JavaScript';
+        document.write('<br>Index van het woord JavaScript is: ' + string.indexOf('JavaScript'));
+        document.write('<br>Index van het woord HTML is: ' + string.indexOf('HTML'));
+
+        if (navigator.userAgent.indexOf('MSIE') != -1) {
+            document.write('<br>Browser is Internet Explorer');
+        } else if (navigator.userAgent.indexOf('Firefox', 0) != -1) {
+            document.write('<br>Browser is Firefox');
+        } else if (navigator.userAgent.indexOf('Chrome') != -1) {
+            document.write('<br>Browser is Google Chrome');
+        }
+
+        var gebruiker = 'supergebruiker';
+        document.write("<p>De lengte van gebruiker is: " + gebruiker.length);
+
+        var titel = 'JavaScript';
+        document.write('<br>De lengte van titel is: ' + titel.length);
+
+        var gebruiker = 'supergebruiker';
+        document.write("<p>Het teken op positie 4 van gebruiker is: " +
+            gebruiker.charAt(4) + "</p>");
+
+        var titel = 'JavaScript';
+        var spiegeling = ' ';
+        for (var x = 0; x < titel.length; x++) {
+            teken = titel.charAt(x);
+            spiegeling = teken + spiegeling;
+        }
+        document.write('<p>JavaScript gespiegeld is: ' + spiegeling + '</p>');
+
+        var namen = 'Maria, Jenny, Lisa';
+        var resultaat = namen.split(',');
+        console.log(resultaat)
+
+        var tekst = 'Dit is een lange tekst met daarin het woord JavaScript';
+        splitsing = tekst.split(' ');
+        document.write('De resulterende array is: ' + splitsing);
+        var lengte = splitsing.length;
+        for (var i = 0; i < lengte; i++) {
+            document.write('<br>Splitsing[' + i + ']=' + splitsing[i]);
+        }
+
+        var string = "abcdefg";
+        document.write("<p>Substring van string: " + string.substring(3, 6));
+        document.write("<br>String: " + string);
+
+        var string = 'Dit is een lange string met daarin het woord JavaScript';
+        document.write('<br>Substring van string:' + string.substring(10, 23));
+
+        gebruiker = 'supergebruiker';
+        document.write('<br>' + gebruiker.substr(5, 9));
+
+        string = string.substr(0, string.indexOf('JavaScript')) + string.substr(string.indexOf('JavaScript') + 10, string.length);
+        document.write('<br>String is nu: ' + string);
+
+        var string = "Dit is een lange string met daarin het woord JavaScript";
+        var string = string.substr(0, string.indexOf("met")) + " zonder " +
+            string.substr(string.indexOf("met") + ("met".length + 1), string.length);
+        document.write("<br>String is nu: " + string);
+
+        var tekst = " javascript ";
+        document.write("<p>" + tekst + tekst.length);
+        document.write("<br>" + tekst.trim() + tekst.length);
+        tekst = tekst.trim();
+        document.write("<br>" + tekst + tekst.length);
+
+        var naam = "Marlies";
+        document.write("<p>" + naam.toLowerCase());
+        document.write("<br>" + naam.toUpperCase());
+        document.write("<br>" + naam);
+        naam = naam.toLowerCase();
+        document.write("<br>" + naam);
+
+        var cursus = prompt('Kies een van de volgende ' + 'cursussen HTML of JavaScript');
+        if (cursus.toLowerCase() == 'html' ||
+            cursus.toLowerCase() == 'javascript') {
+            document.write('<p>Je hebt: ' + cursus.toUpperCase() + ' gekozen.');
+        } else {
+            document.write('<br>Kies een geldige cursus.')
+        }
+
+    </script>
+</body>
+
+</html>

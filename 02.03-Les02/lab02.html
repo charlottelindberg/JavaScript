@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vardigheid-lab 02</title>
+</head>
+
+<body>
+    <h1>Euro naar Dollars</h1>
+    <script>
+        var euroNaarDollar = prompt("Hoeveel Euro wil je naar Dollars omzetten?");
+        var aantalEuro = prompt("Wat is de koers?");
+        var commissiePercentage = prompt("Hoeveel vraagt de bank in commissie?");
+        var vasteKost = prompt("Wat is de vaste omruilkost van de bank?")
+        var totaal = (euroNaarDollar - vasteKost - commissiePercentage) * aantalEuro;
+        document.write("<br>Aantal Euro naar Dollars omzetten: " + euroNaarDollar);
+        document.write("<br>Voor één Euro krijg je zoveel Dollars: " + aantalEuro);
+        document.write("<br>De bank rekent 2% commissie aan: " + commissiePercentage);
+        document.write("<br>De bank rekent een vaste kost aan: " + vasteKost);
+        document.write("<br>Aantal Dollars gekregen: " + totaal);
+    </script>
+
+</body>
+
+</html>

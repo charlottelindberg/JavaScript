@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var tekst = 'JavaScript';
+        var letter = tekst.charAt(1);
+        document.write(letter)
+
+        var tekst = 'Zij leekt een beetje op Winnie Mandela.';
+        lengte = tekst.length;
+        spaties = 0;
+        document.write('<br>');
+        for (var x = 0; x < lengte; x++) {
+            teken = tekst.charAt(x);
+            document.write(teken);
+            if (teken == ' ') {
+                spaties++;
+            }
+
+        }
+
+        lengte = tekst.length;
+        aas = 0;
+        for (var x = 0; x < lengte; x++) {
+            teken = tekst.charAt(x);
+            if (teken == 'a') {
+                aas++;
+            }
+
+        }
+
+        lengte = tekst.length;
+        es = 0;
+        for (var x = 0; x < lengte; x++) {
+            teken = tekst.charAt(x);
+            if (teken == 'e') {
+                es++;
+            }
+
+        }
+
+        lengte = tekst.length;
+        iis = 0;
+        for (var x = 0; x < lengte; x++) {
+            teken = tekst.charAt(x);
+            if (teken == 'i') {
+                iis++;
+            }
+
+        }
+
+        lengte = tekst.length;
+        oos = 0;
+        for (var x = 0; x < lengte; x++) {
+            teken = tekst.charAt(x);
+            if (teken == 'o') {
+                oos++;
+            }
+
+        }
+
+        lengte = tekst.length;
+        uus = 0;
+        for (var x = 0; x < lengte; x++) {
+            teken = tekst.charAt(x);
+            if (teken == 'u') {
+                uus++;
+            }
+
+        }
+
+        document.write('<br>Tekst bevat ' + spaties + ' spaties');
+        document.write('<br>Aantal a\'s: ' + aas);
+        document.write('<br>Aantal e\'s: ' + es);
+        document.write('<br>Aantal i\'s: ' + iis);
+        document.write('<br>Aantal o\'s: ' + oos);
+        document.write('<br>Aantal u\'s: ' + uus);
+    </script>
+</body>
+
+</html>

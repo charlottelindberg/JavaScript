@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var maanden = new Array('januari', 'februari', 'maart', 'april', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december');
+        var weekdag = new Array('zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag')
+
+        var vandaag = new Date();
+        var weekdag = vandaag.toDateString([5]);
+        var maanden = vandaag.toDateString([3]);
+        var jaar = vandaag.getFullYear();
+        document.write('Vandaag is: ' + vandaag);
+        document.write('<br>Vandaag is: ' + weekdag + maanden + jaar);
+        document.write("<br />Vandaag is: " + weekdag[vandaag.getDay()] + ' ' + vandaag.getDate() + ' ' + maanden[vandaag.getMonth()] + ' ' + vandaag.getFullYear());
+    </script>
+</body>
+
+</html>
