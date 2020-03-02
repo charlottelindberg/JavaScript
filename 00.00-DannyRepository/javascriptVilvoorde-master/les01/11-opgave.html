@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Koffie en thee</title>
+	<!-- dit script werkt met variabelen
+		auteur: danny
+		datum:2020
+	-->
+</head>
+<body>
+	<script>
+		var klantnaam=prompt("voer je eigen naam in");
+		var aantalKoffie = parseInt(prompt("Hoeveel koffies wil je bestellen?"));
+		var aantalThee = parseInt(prompt("Hoeveel thees wil je bestellen?"));
+		var prijsKoffie=2.50;
+		var prijsThee=2.35;
+		var bedragKoffie=aantalKoffie*prijsKoffie;
+		var bedragThee=aantalThee*prijsThee;
+		var totaal=bedragKoffie + bedragThee;
+		var btwPercentage=0.21;
+		var btw=(totaal * btwPercentage);
+		
+		var totaalIncl=(totaal+btw);
+		document.write("<h1>Koffie en thee bestelling</h1>");
+		document.write("<p>Bedankt voor je bestelling: " + klantnaam +"</p>");
+		document.write("<p>Je hebt \"" + aantalKoffie + "\" aantal koffies besteld en \"" + aantalThee + "\" aantal thees.</p>");
+		document.write(
+			"<p>Het totaal is: <br>	Koffie: \"" + aantalKoffie + "\" * " + "\"" + prijsKoffie + "\" = " + "\"" + bedragKoffie +"\"<br>	Thee: \"" + aantalThee + "\" * " + "\"" + prijsThee + "\" = " + "\"" + bedragThee +"\"</p>");
+		document.write("<p>Het totaal zonder btw: \"" + totaal + "\"</p>" )
+		document.write("<p>BTW is: \"" + totaal + "\" * " + "\""+btwPercentage+ "\" = " + "\"" + btw.toFixed(2) +"\"</p>");
+		document.write("<p>Totaal inclusief BTW is: \"" + totaalIncl.toFixed(2) + "\"</p>");
+/*
+Vraag naam, aantal koffies en aantal thees.
+Maak variabelen voor:
+klantnaam
+aantalKoffie
+aantalThee
+prijsKoffie
+prijsThee
+bedragKoffie
+bedragThee
+totaal
+btwPercentage
+btw
+
+Schrijf:
+h1
+Koffie en thee bestelling
+
+Bedankt voor je bestelling: JavaScript
+
+Je hebt "2" aantal koffies besteld en "2" aantal thees.
+
+Het totaal is:
+Koffie: "2" * "2.5" = "5"
+Thee: "2" * "2.35" = "4.7"
+
+Het totaal zonder btw: "9.7"
+
+BTW is: "9.7" * "0.21" = "2.04"
+
+Totaal inclusief BTW is: "11.74"
+*/
+	</script>
+</body>
+</html>

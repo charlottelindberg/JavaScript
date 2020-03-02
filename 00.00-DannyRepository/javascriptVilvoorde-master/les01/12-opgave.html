@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Op reis</title>
+
+</head>
+<body>
+	<script>
+		var vliegBestemming=prompt("Waar vlieg je naartoe?");
+		var vliegBestemmingKost=prompt("Wat is de prijs van de retourvlucht?");
+		var bestemming1Naam=prompt("Wat is je eerste bestemming?");
+		var bestemming1Kost=prompt("Wat is de prijs voor de reis naar de eerste bestemming?");
+		var bestemming2Naam=prompt("Wat is je tweede bestemming?");
+		var bestemming2Kost=prompt("Wat is de prijs voor de reis naar de tweede bestemming?");
+		var bestemming3Naam=prompt("Wat is je derde bestemming?");
+		var bestemming3Kost=prompt("Wat is de prijs voor de reis naar de derde bestemming?");
+		
+		var totaal=parseInt(vliegBestemmingKost) + parseInt(bestemming1Kost) + parseInt(bestemming2Kost) + parseInt(bestemming3Kost);
+		console.log(vliegBestemmingKost + " "+ bestemming1Kost + "  " + bestemming2Kost + " " +bestemming3Kost)
+		var btwPercentage=0.21;
+		var totaalIncl = totaal + (totaal * btwPercentage);
+		console.log(totaalIncl);
+
+		document.write("<h1>Mijn reis deze zomer.</h1>");
+		document.write("<p>Deze zomer vlieg je naar \"" + vliegBestemming + "\"</p>");
+		document.write("<p>Je bezoekt volgende plaatsten: " + "\" " + bestemming1Naam + "\", \" " + bestemming2Naam + "\", \"" + bestemming3Naam + "\"</p>");
+		document.write("<p>De kostprijs is: <br>" 
+			+ "Vliegreis: " + vliegBestemmingKost + " <br>" 
+			+ "Reis naar \"" + bestemming1Naam + "\" :"  + bestemming1Kost + " <br>" 
+			+ "Reis naar \"" + bestemming2Naam + "\" :"  + bestemming2Kost + " <br>"
+			+ "Reis naar \"" + bestemming3Naam + "\" :"  + bestemming3Kost + " <br>"
+			+ "----------------<br>"
+			+ "Totaal: " + totaal + "<br>"
+			+ "btwPercentage: " + btwPercentage + " <br>"
+			+ "----------------<br>"
+			+ "Totaal incl btw: " + totaalIncl
+			+ " </p>");
+		
+/*
+Je vliegt deze zomer op vakantie naar een zonnig land en gaat ter plaatse 3 steden bezoeken.
+Vraag volgende zaken:
+vliegBestemming
+vliegBestemmingKost
+bestemming1Naam
+bestemming1Kost
+bestemming2Naam
+bestemming2Kost
+bestemming3Naam
+bestemming3Kost
+*/
+	</script>
+</body>
+</html>

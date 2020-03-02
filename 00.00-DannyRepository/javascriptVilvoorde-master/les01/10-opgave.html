@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script>
+/*
+Toon een alert: Loonberekening
+Maak ook een h1 met dezelfde tekst.
+
+Vraag aan de gebruiker: Wil je je loon berekenen? 
+Mogelijke antwoorden zijn: annuleren of ok
+Bewaar dit in een var, dus:
+var antwoord=confirm(...
+Schrijf in het document: Jouw antwoord was: xyz
+Log dit ook in de console.
+
+Vraag aan de gebruiker: Hoeveel wil je netto verdienen per jaar?
+Standaard staat 1000 ingevuld.
+Bereken zijn vakantiegeld: 50% van een maandloon.
+Schrijf in het document: 
+Als je 1000.00 per jaar verdient, dan krijg je 41.67. 
+Met je vakantiegeld erbij geteld zal je dan 1041.67 verdienen
+*/
+
+	alert("Loonberekening van 'Javascript of'");
+	document.write("<h1>Loonberekening</h1>");
+	var antwoord = confirm('Wil je je loon berekenen?');
+	document.write('<p>Jouw antwoord was ' + antwoord +'</p>');
+	console.log('Jouw antwoord was ' + antwoord);
+	var bedrag = parseInt(prompt('Hoeveel wil je netto verdienen per jaar?','1000'));
+	// console.log(typeof bedrag)
+	var vakantiegeld= bedrag * 0.50 / 12;
+	var totaal= bedrag + vakantiegeld
+	document.write('<p>Als je ' + bedrag.toFixed(2) +' per jaar verdient, dan krijg je ' + vakantiegeld.toFixed(2) + ".<br>Met je vakantiegeld erbij geteld zal je dan " + totaal.toFixed(2) + " verdienen</p>");
+	</script>
+</body>
+</html>

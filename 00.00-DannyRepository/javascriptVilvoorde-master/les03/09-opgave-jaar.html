@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		var totaleJaar=["januari", "februari", "maart", "april", "mei", "juni","juli", "augustus", "september", "oktober", "november", "december"];
+
+		var zomer=totaleJaar.slice(5,8);
+		var jaarZonderWinter = totaleJaar.slice();
+		// jaarZonderWinter.splice(2,9);
+		document.write("totaleJaar: " + totaleJaar);
+		jaarZonderWinter.shift();
+		jaarZonderWinter.shift();
+		jaarZonderWinter.pop();
+		document.write("<p>Zomer: " + zomer+"</p>");
+		document.write("<p>Jaar zonder winter: " + jaarZonderWinter +"</p>");
+		var nummerVanMaart=totaleJaar.indexOf("maart");
+		document.write("<p>Maart is maand nr " + nummerVanMaart);
+		
+		
+
+/*
+Maak een array totaleJaar met volgende inhoud:
+januari, februari, maart, april, mei, juni, juli, augustus, september, oktober, november, december
+Maak een array zomer en vul de zomermaanden in mbv de totaleJaar array.
+Maak een array jaarZonderWinter als kopie van totaleJaar. Verwijder de wintermaanden, je mag niet gebruik maken van slice om de maanden te verwijderen.
+Maak een var nummerVanMaart en vraag de index van de maand maart op. 
+Document.write:
+Zomer: juni,juli,augustus
+Jaar zonder winter: maart,april,mei,juni,juli,augustus,september,oktober,november
+Maart is maand nr 2 
+*/		
+		
+	</script>
+</body>
+</html>

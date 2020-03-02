@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		var weekdag = new Array();
+		document.write("<br>Opgave 21: Array aangemaakt");
+
+		weekdag[0] = "Maandag";
+		weekdag[1] = "Dinsdag";
+		weekdag[2] = "Woensdag";
+		weekdag[3] = "Donderdag";
+		weekdag[4] = "Vrijdag";
+		weekdag[5] = "Zaterdag";
+		weekdag[6] = "Zondag";
+		document.write("<br>Opgave 22: Elementen aangemaakt");
+
+		var weekdag = new Array("Maandag", "Dinsdag","Woensdag", "Donderdag","Vrijdag","Zaterdag","Zondag");
+
+		document.write("<br>Opgave 23: weekdag array: " + weekdag);
+		document.write("<br>Eerste element in array: " + weekdag[0]);
+
+		var team= new Array();
+		team[0]="Arsenal";
+		team[1]="Marseille";
+		team[2]="FC Barcelona";
+		team[3]="Ajax";
+
+		team[0]=new Array();
+		team[0][0]=3;
+
+		var team= new Array();
+		team[1]=new Array();
+		team[2]=new Array();
+		team[3]=new Array(); 
+		team[1][1]=1;
+		team[1][2]=2;
+		team[1][3]=3;
+		team[2][1]=4;
+		team[2][2]=5;
+		team[2][3]=6;
+		team[3][1]=7;
+		team[3][2]=8;
+		team[3][3]=9;
+		document.write('Scores team1: ' + team[1] + "<br>");
+		document.write('Scores team1: ' + team[1][1] + ' ' + team[1][2] + ' ' + team[1][3]);
+
+		
+	</script>
+</body>
+</html>

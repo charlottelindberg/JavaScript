@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script>
+	var euroNaarDollar=prompt("Hoeveel is 1 euro waard in Dollar?");
+	//1.2
+	var aantalEuro=prompt("Hoeveel euro wil je wisselen?");
+	//1000
+	var commissiePercentage=prompt("Hoeveel % commissie rekent de bank aan?");
+	//2
+	var vasteKost=prompt("Hoeveel rekent de bank aan als vaste kost?");
+	//10
+	var commissie= aantalEuro * commissiePercentage/100;
+	// 1000 * 2% (= 0,02) = 20
+	var resterendeEuro=aantalEuro - commissie - vasteKost;
+	//1000 -20 - 10 = 970
+	var dollars= (resterendeEuro * euroNaarDollar);
+	//970 * 1.2= 1164
+	document.write("<h1>Euro naar Dollars</h1>");
+	document.write("<p>Je wil "+ aantalEuro + " euro  omzetten naar dollars tegen een koers van " + euroNaarDollar + " dollar per euro.</p>")
+	document.write("<p>De bank rekent " + commissiePercentage + "% commissie aan : "+ commissie +" euro</p>");
+	document.write("<p>En een vaste kost van : " + vasteKost + " euro.</p>");
+	document.write("<p>Je krijgt dus: " + aantalEuro + " - " + commissie + " - " + vasteKost + " = " + resterendeEuro + " * " + euroNaarDollar + " = " + dollars.toFixed(2) + " aantal dollars.</p>");
+
+
+
+
+
+
+
+/*
+Vraag volgende elementen:
+euroNaarDollar
+aantalEuro
+commissiePercentage
+vasteKost
+
+Schrijf in het document volgende zinnen, bv.:
+
+h1: Euro naar Dollars
+
+paragrafen:
+Je wil 1000 euro omzetten naar dollars tegen een koers van 1.20 dollar per euro.
+De bank rekent 2% commissie aan : 20 euro
+En een vaste kost van : 10 euro.
+Je krijgt dus: 1000 - 20 - 10 = 970 * 1.2 = 1164.00 aantal dollars.
+*/
+
+</script>
+</body>
+</html>

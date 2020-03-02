@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		var studenten = new Array('Zakaria', 'Albert', 'Hamsa', 'Mike', 'Pieter');
+		document.write('<br>Opgave 24: Studenten: ' + studenten);
+		
+		var team = studenten;
+		document.write("<br>Opgave 25: Team: " + team);
+
+		team[0]='Umut';
+		document.write("<br>Opgave 26: Element [0] is gewijzigd: " + studenten);
+
+		studenten.shift();
+		document.write("<br>Opgave 27: Resultaat van shift: " + studenten);
+
+		studenten.unshift('Jozef','Umut');
+   document.write(
+    '<br /> Opgave 28: Resultaat van unshift:'+studenten );
+
+   studenten.pop();
+   document.write(
+    '<br /> Opgave 29: Resultaat van pop:' + studenten );
+
+   studenten.push('Pieter','David');
+   document.write(
+    '<br />Opgave 30:Resultaat van push: ' + studenten );
+
+   klas = studenten.splice(2,4);
+   document.write(
+    '<br>Opgave 31:Resultaat<br>studenten:'+studenten+'<br>klas:'+klas);
+
+   studenten.sort();
+   document.write(
+    '<br />Opgave 32:Resultaat van sort:' + studenten );
+
+   studenten.reverse();
+   document.write(
+    '<br />Opgave 33:Resultaat van reverse:' + klas );
+
+   var index = studenten.indexOf('Jozef');
+   document.write(
+    '<br />Opgave 34:Resultaat van indexOf Jozef: ' + index );
+
+   delete klas[2];
+   document.write(
+    '<br />Opgave 35:Resultaat van delete:'+klas);
+
+   document.write(
+    '<br />Opgave 36:Datatype van gedelete element:'+ typeof klas[2]);
+
+   klas.splice(2,1);
+   document.write(
+    '<br />Opgave 37:Element volledig verwijderd:' + klas );
+
+   index = studenten.indexOf('Jozef');
+   studenten.splice(index,1);
+   document.write(
+    '<br>Opgave 38:Specifieke student verwijderd: '+ studenten );
+
+   klas2 = klas.slice();
+   document.write(
+    '<br />Opgave 39:Resultaat van kopiëren:' + klas2 );
+
+   var myString = klas.join('|');
+   document.write(
+    '<br />Opgave 40:Resultaat van join:' + myString );
+
+
+
+   var weekdag = new Array();
+    weekdag[0] = "Maandag";
+    weekdag[1] = "Dinsdag";
+    weekdag[2] = "Woensdag";
+    weekdag[3] = "Donderdag";
+    weekdag[4] = "Vrijdag";
+    weekdag[5] = "Zaterdag";
+    weekdag[6] = "Zondag";
+
+    weekdag.shift();
+    console.log(weekdag);
+    weekdag.unshift("maandag");
+    console.log(weekdag);
+    weekdag.pop();
+    console.log(weekdag);
+    weekdag.push("zondag");
+    console.log(weekdag);
+    var weekend=weekdag.splice(5,2);
+    console.log(weekdag);
+    console.log(weekend);
+    weekdag.sort();
+    console.log(weekdag);
+    weekdag.reverse();
+    console.log(weekdag);
+
+    var locatieWoensdag = weekdag.indexOf("Woensdag");
+    console.log(locatieWoensdag);
+    var locatieWerkdag = weekdag.indexOf("werkdag");
+    console.log(locatieWerkdag);
+
+    delete weekend[1];
+    console.log(weekend);
+    console.log(typeof weekend[0]);
+    console.log(typeof weekend[1]);
+
+    weekdag.splice(2,2);
+    console.log(weekdag);
+
+    var indexWoensdag = weekdag.indexOf('woensdag');
+    weekdag.splice(index,1);
+    console.log(weekdag);
+
+    weekendBis=weekend.slice();
+    console.log(weekendBis);
+
+    var overgeblevenWeekdagen= weekdag.join("-");
+    console.log(overgeblevenWeekdagen);
+
+    var nieuweWeekdagArray = overgeblevenWeekdagen.split("-");
+    console.log(nieuweWeekdagArray);
+
+
+	</script>
+</body>
+</html>
